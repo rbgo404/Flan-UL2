@@ -4,7 +4,7 @@ import torch
 class InferlessPythonModel:
     def initialize(self):
         model_id = "google/flan-ul2"  # Specify the model repository ID
-        self.model = T5ForConditionalGeneration.from_pretrained(model_id, device_map="auto", load_in_8bit=True)                                                                 
+        self.model = T5ForConditionalGeneration.from_pretrained(model_id).to("cuda")                                                                 
         self.tokenizer = AutoTokenizer.from_pretrained(model_id)
         
     def infer(self,inputs):
