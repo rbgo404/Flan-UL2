@@ -1,4 +1,4 @@
-# Tutorial - Deploy Flan-UL2 using Inferless
+# Deploy Flan-UL2 using Inferless
 Flan-UL2, based on the T5 architecture, features 20 billion parameters and is optimized for NLP tasks through "Flan" prompt tuning. It excels in zero-shot, few-shot, and fine-tuning scenarios. The model has a 2048 token context window, enhancing its ability to handle long documents. It supports a variety of tasks like summarization, translation, and question answering, making it highly versatile for diverse applications. Link to the model [Flan-UL2](https://huggingface.co/google/flan-ul2).
 
 ### Fork the Repository
