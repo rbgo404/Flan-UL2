@@ -1,5 +1,4 @@
 from transformers import T5ForConditionalGeneration, AutoTokenizer
-import torch
 
 class InferlessPythonModel:
     def initialize(self):
@@ -15,4 +14,5 @@ class InferlessPythonModel:
         return {'generated_result': result_output}
 
     def finalize(self):
-        pass
+        self.model = None
+        self.tokenizer = None
